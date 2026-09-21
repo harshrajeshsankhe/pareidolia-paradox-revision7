@@ -65,3 +65,28 @@ Trained Revision 7 model: `revision7_full.pt`
 
 **Access:** Anyone with the link → Viewer
 
+
+
+## Hardware Requirements
+
+- Machine: MacBook Air
+- GPU: Apple Silicon GPU using PyTorch MPS
+- Operating system: macOS
+- Python: 3.14
+- RAM: 16 GB recommended
+
+The code automatically selects Apple MPS when available, CUDA when available, and CPU otherwise. CUDA is not required.
+
+## Inference Instructions
+
+After installing the dependencies and placing the dataset and model checkpoint in the expected locations, run:
+
+```bash
+python inference.py
+```
+
+This single command loads the Revision 7 model, applies physics-aware preprocessing, extracts the five-channel representation, runs inference on all 2,000 evaluation images, reconstructs the Revision 7 meta-model from saved OOF predictions, applies the final hybrid threshold, and generates `submission.csv`.
+
+The generated submission contains exactly 2,000 prediction rows with the columns `image_id,label`.
+
+Labels: `0` = Depth, `1` = Rise.
