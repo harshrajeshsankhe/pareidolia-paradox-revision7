@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+models/
+outputs/
+src/
+train_images/
+eval_images/
+train_metadata.csv
+test_metadata.csv
+*.zip
