@@ -55,3 +55,13 @@ The validated final artifacts are stored under models/revision7/ and outputs/sub
 Harsh Sankhe
 
 Computer Engineering | Cyber Security | AI & Data Analytics | Computer Vision
+
+
+## Model Weights
+
+**[Download revision7_full.pt — Google Drive](https://drive.google.com/file/d/1kR97gwpmxgknCxCBoS59PBVRVKTljDyE/view?usp=drive_link)**
+
+Trained Revision 7 model: `revision7_full.pt`
+
+**Access:** Anyone with the link → Viewer
+
